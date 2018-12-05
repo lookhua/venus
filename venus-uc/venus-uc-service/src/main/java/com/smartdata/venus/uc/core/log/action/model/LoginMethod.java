@@ -1,7 +1,6 @@
 package com.smartdata.venus.uc.core.log.action.model;
 
 import com.smartdata.core.enums.uc.ActionLogEnum;
-
 import lombok.Getter;
 
 /**

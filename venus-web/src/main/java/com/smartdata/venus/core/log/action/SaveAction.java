@@ -1,17 +1,14 @@
 package com.smartdata.venus.core.log.action;
 
-import java.lang.reflect.InvocationTargetException;
-
-import javax.persistence.Table;
-
-import org.springframework.util.Assert;
-
 import com.smartdata.core.utils.ReflexBeanUtil;
 import com.smartdata.venus.core.log.action.base.ActionMap;
 import com.smartdata.venus.core.log.action.base.ResetLog;
 import com.smartdata.venus.uc.domain.ActionLog;
-
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.util.Assert;
+
+import javax.persistence.Table;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * 通用：记录保存数据的行为

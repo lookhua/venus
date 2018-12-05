@@ -1,13 +1,11 @@
 package com.smartdata.venus.uc.validator;
 
-import java.io.Serializable;
+import com.smartdata.venus.uc.domain.Dict;
+import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-
-import com.smartdata.venus.uc.domain.Dict;
-
-import lombok.Data;
+import java.io.Serializable;
 
 /**
  * @author khlu

@@ -1,15 +1,15 @@
 package com.smartdata.devtools.code.template;
 
-import java.nio.file.FileAlreadyExistsException;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
-
 import com.smartdata.core.utils.ToolUtil;
 import com.smartdata.devtools.code.domain.Field;
 import com.smartdata.devtools.code.domain.Generate;
 import com.smartdata.devtools.code.utils.CodeUtil;
 import com.smartdata.devtools.code.utils.GenerateUtil;
 import com.smartdata.devtools.code.utils.TemplateUtil;
+
+import java.nio.file.FileAlreadyExistsException;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author khlu

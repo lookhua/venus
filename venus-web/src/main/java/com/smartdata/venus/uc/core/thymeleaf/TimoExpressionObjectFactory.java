@@ -1,16 +1,15 @@
 package com.smartdata.venus.uc.core.thymeleaf;
 
+import com.smartdata.venus.uc.core.thymeleaf.utility.DictUtil;
+import com.smartdata.venus.uc.core.thymeleaf.utility.LogUtil;
+import com.smartdata.venus.uc.core.thymeleaf.utility.PageUtil;
+import org.thymeleaf.context.IExpressionContext;
+import org.thymeleaf.expression.IExpressionObjectFactory;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
-
-import org.thymeleaf.context.IExpressionContext;
-import org.thymeleaf.expression.IExpressionObjectFactory;
-
-import com.smartdata.venus.uc.core.thymeleaf.utility.DictUtil;
-import com.smartdata.venus.uc.core.thymeleaf.utility.LogUtil;
-import com.smartdata.venus.uc.core.thymeleaf.utility.PageUtil;
 
 /**
  * @author khlu

@@ -1,11 +1,9 @@
 package com.smartdata.venus.uc.core.config.properties;
 
+import com.smartdata.core.utils.ToolUtil;
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
-
-import com.smartdata.core.utils.ToolUtil;
-
-import lombok.Data;
 
 /**
  * 项目配置项

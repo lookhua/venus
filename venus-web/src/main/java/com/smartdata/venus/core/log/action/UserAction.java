@@ -1,9 +1,5 @@
 package com.smartdata.venus.core.log.action;
 
-import java.util.List;
-
-import javax.persistence.Table;
-
 import com.smartdata.core.utils.FormBeanUtil;
 import com.smartdata.venus.core.log.action.base.ActionMap;
 import com.smartdata.venus.core.log.action.base.ResetLog;
@@ -14,6 +10,9 @@ import com.smartdata.venus.uc.domain.ActionLog;
 import com.smartdata.venus.uc.domain.User;
 import com.smartdata.venus.uc.system.service.ActionLogService;
 import com.smartdata.venus.uc.system.service.UserService;
+
+import javax.persistence.Table;
+import java.util.List;
 
 /**
  * 用户日志行为

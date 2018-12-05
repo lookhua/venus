@@ -1,10 +1,9 @@
 package com.smartdata.venus.uc.system.repository;
 
-import java.util.List;
-
+import com.smartdata.venus.uc.domain.ActionLog;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.smartdata.venus.uc.domain.ActionLog;
+import java.util.List;
 
 public interface ActionLogRepository extends JpaRepository<ActionLog, Long> {
 

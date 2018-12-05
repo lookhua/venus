@@ -1,13 +1,12 @@
 package com.smartdata.venus.web.config;
 
-import java.util.Optional;
-
+import com.smartdata.venus.uc.domain.User;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.AuditorAware;
 
-import com.smartdata.venus.uc.domain.User;
+import java.util.Optional;
 
 /**
  * 审核员自动赋值配置

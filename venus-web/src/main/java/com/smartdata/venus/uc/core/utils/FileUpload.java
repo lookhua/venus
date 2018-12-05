@@ -1,5 +1,12 @@
 package com.smartdata.venus.uc.core.utils;
 
+import com.smartdata.core.enums.uc.ResultEnum;
+import com.smartdata.core.utils.ToolUtil;
+import com.smartdata.venus.exception.ResultException;
+import com.smartdata.venus.uc.core.config.properties.ProjectProperties;
+import com.smartdata.venus.uc.domain.File;
+import org.springframework.web.multipart.MultipartFile;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -12,14 +19,6 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
-
-import org.springframework.web.multipart.MultipartFile;
-
-import com.smartdata.core.enums.uc.ResultEnum;
-import com.smartdata.core.utils.ToolUtil;
-import com.smartdata.venus.exception.ResultException;
-import com.smartdata.venus.uc.core.config.properties.ProjectProperties;
-import com.smartdata.venus.uc.domain.File;
 
 /**
  * 文件上传处理工具

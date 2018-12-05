@@ -1,12 +1,11 @@
 package com.smartdata.venus.uc.system.service;
 
-import java.util.List;
-
+import com.smartdata.venus.uc.domain.ActionLog;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.smartdata.venus.uc.domain.ActionLog;
+import java.util.List;
 
 public interface ActionLogService {
 

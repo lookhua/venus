@@ -1,10 +1,10 @@
 package com.smartdata.venus.core.log.action;
 
-import java.util.List;
-
 import com.smartdata.core.enums.uc.StatusEnum;
 import com.smartdata.venus.core.log.action.base.ActionMap;
 import com.smartdata.venus.core.log.action.base.ResetLog;
+
+import java.util.List;
 
 /**
  * 通用：记录数据状态的行为

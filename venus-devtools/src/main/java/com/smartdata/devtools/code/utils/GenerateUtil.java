@@ -1,14 +1,14 @@
 package com.smartdata.devtools.code.utils;
 
+import com.smartdata.core.utils.ToolUtil;
+import com.smartdata.devtools.code.DefaultValue;
+import com.smartdata.devtools.code.domain.Generate;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.nio.file.FileAlreadyExistsException;
-
-import com.smartdata.core.utils.ToolUtil;
-import com.smartdata.devtools.code.DefaultValue;
-import com.smartdata.devtools.code.domain.Generate;
 
 /**
  * @author khlu

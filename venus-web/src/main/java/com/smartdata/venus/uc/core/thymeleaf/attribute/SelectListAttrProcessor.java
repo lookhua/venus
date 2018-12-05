@@ -1,22 +1,17 @@
 package com.smartdata.venus.uc.core.thymeleaf.attribute;
 
-import java.lang.reflect.Array;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.thymeleaf.IEngineConfiguration;
 import org.thymeleaf.context.ITemplateContext;
 import org.thymeleaf.engine.AttributeName;
 import org.thymeleaf.model.IProcessableElementTag;
 import org.thymeleaf.processor.element.IElementTagStructureHandler;
-import org.thymeleaf.standard.expression.FragmentExpression;
-import org.thymeleaf.standard.expression.IStandardExpression;
-import org.thymeleaf.standard.expression.IStandardExpressionParser;
-import org.thymeleaf.standard.expression.NoOpToken;
-import org.thymeleaf.standard.expression.StandardExpressionExecutionContext;
-import org.thymeleaf.standard.expression.StandardExpressions;
+import org.thymeleaf.standard.expression.*;
 import org.thymeleaf.templatemode.TemplateMode;
+
+import java.lang.reflect.Array;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 自定义下拉列表生成标签

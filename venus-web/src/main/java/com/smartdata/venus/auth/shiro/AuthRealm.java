@@ -1,12 +1,11 @@
 package com.smartdata.venus.auth.shiro;
 
-import java.util.Set;
-
-import org.apache.shiro.authc.AuthenticationException;
-import org.apache.shiro.authc.AuthenticationInfo;
-import org.apache.shiro.authc.AuthenticationToken;
-import org.apache.shiro.authc.SimpleAuthenticationInfo;
-import org.apache.shiro.authc.UsernamePasswordToken;
+import com.smartdata.core.enums.uc.StatusEnum;
+import com.smartdata.venus.uc.domain.Role;
+import com.smartdata.venus.uc.domain.User;
+import com.smartdata.venus.uc.system.service.RoleService;
+import com.smartdata.venus.uc.system.service.UserService;
+import org.apache.shiro.authc.*;
 import org.apache.shiro.authc.credential.CredentialsMatcher;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -16,11 +15,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.smartdata.core.enums.uc.StatusEnum;
-import com.smartdata.venus.uc.domain.Role;
-import com.smartdata.venus.uc.domain.User;
-import com.smartdata.venus.uc.system.service.RoleService;
-import com.smartdata.venus.uc.system.service.UserService;
+import java.util.Set;
 
 
 /**

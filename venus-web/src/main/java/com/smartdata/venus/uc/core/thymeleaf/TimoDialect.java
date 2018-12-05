@@ -1,8 +1,9 @@
 package com.smartdata.venus.uc.core.thymeleaf;
 
-import java.util.LinkedHashSet;
-import java.util.Set;
-
+import com.smartdata.venus.uc.core.thymeleaf.attribute.SelectDictEnumAttrProcessor;
+import com.smartdata.venus.uc.core.thymeleaf.attribute.SelectDictKeyAttrProcessor;
+import com.smartdata.venus.uc.core.thymeleaf.attribute.SelectListAttrProcessor;
+import com.smartdata.venus.uc.core.thymeleaf.attribute.UserAttrProcessor;
 import org.thymeleaf.dialect.AbstractProcessorDialect;
 import org.thymeleaf.dialect.IExpressionObjectDialect;
 import org.thymeleaf.expression.IExpressionObjectFactory;
@@ -10,10 +11,8 @@ import org.thymeleaf.processor.IProcessor;
 import org.thymeleaf.standard.StandardDialect;
 import org.thymeleaf.templatemode.TemplateMode;
 
-import com.smartdata.venus.uc.core.thymeleaf.attribute.SelectDictEnumAttrProcessor;
-import com.smartdata.venus.uc.core.thymeleaf.attribute.SelectDictKeyAttrProcessor;
-import com.smartdata.venus.uc.core.thymeleaf.attribute.SelectListAttrProcessor;
-import com.smartdata.venus.uc.core.thymeleaf.attribute.UserAttrProcessor;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 /**
  * @author khlu

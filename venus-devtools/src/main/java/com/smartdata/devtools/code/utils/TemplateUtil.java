@@ -1,13 +1,13 @@
 package com.smartdata.devtools.code.utils;
 
+import com.smartdata.devtools.code.domain.Generate;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import com.smartdata.devtools.code.domain.Generate;
 
 /**
  * 标准模板

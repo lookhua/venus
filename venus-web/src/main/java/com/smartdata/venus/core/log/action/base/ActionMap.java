@@ -1,9 +1,9 @@
 package com.smartdata.venus.core.log.action.base;
 
-import java.util.HashMap;
-
 import com.smartdata.venus.uc.core.log.action.model.BusinessMethod;
 import com.smartdata.venus.uc.core.log.action.model.BusinessType;
+
+import java.util.HashMap;
 
 /**
  * @author khlu

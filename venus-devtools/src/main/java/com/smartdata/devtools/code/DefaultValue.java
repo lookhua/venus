@@ -1,15 +1,15 @@
 package com.smartdata.devtools.code;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import com.smartdata.core.utils.ToolUtil;
 import com.smartdata.devtools.code.domain.Basic;
 import com.smartdata.devtools.code.domain.Field;
 import com.smartdata.devtools.code.enums.FieldQuery;
 import com.smartdata.devtools.code.enums.FieldType;
 import com.smartdata.devtools.code.enums.FieldVerify;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author khlu

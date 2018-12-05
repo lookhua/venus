@@ -1,11 +1,10 @@
 package com.smartdata.venus.uc.system.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.smartdata.venus.uc.domain.File;
 import com.smartdata.venus.uc.system.repository.FileRepository;
 import com.smartdata.venus.uc.system.service.FileService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * @author khlu

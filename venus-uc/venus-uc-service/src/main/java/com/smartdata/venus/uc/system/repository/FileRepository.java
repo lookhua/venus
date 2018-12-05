@@ -1,8 +1,7 @@
 package com.smartdata.venus.uc.system.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-
 import com.smartdata.venus.uc.domain.File;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 
 /**

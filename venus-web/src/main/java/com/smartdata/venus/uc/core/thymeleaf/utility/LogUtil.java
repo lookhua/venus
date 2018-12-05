@@ -1,14 +1,13 @@
 package com.smartdata.venus.uc.core.thymeleaf.utility;
 
-import java.lang.reflect.InvocationTargetException;
-import java.util.List;
-
-import javax.persistence.Table;
-
 import com.smartdata.core.utils.ReflexBeanUtil;
 import com.smartdata.venus.uc.core.utils.SpringContextUtil;
 import com.smartdata.venus.uc.domain.ActionLog;
 import com.smartdata.venus.uc.system.service.ActionLogService;
+
+import javax.persistence.Table;
+import java.lang.reflect.InvocationTargetException;
+import java.util.List;
 
 /**
  * @author khlu

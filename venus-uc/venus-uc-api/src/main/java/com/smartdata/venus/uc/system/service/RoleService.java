@@ -1,15 +1,14 @@
 package com.smartdata.venus.uc.system.service;
 
-import java.util.List;
-import java.util.Set;
-
+import com.smartdata.core.enums.uc.StatusEnum;
+import com.smartdata.venus.uc.domain.Role;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Sort;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.smartdata.core.enums.uc.StatusEnum;
-import com.smartdata.venus.uc.domain.Role;
+import java.util.List;
+import java.util.Set;
 
 /**
  * @author khlu

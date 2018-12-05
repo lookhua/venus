@@ -1,11 +1,17 @@
 package com.smartdata.venus.uc.controller;
 
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.smartdata.core.enums.uc.ResultEnum;
+import com.smartdata.core.enums.uc.UserIsRoleEnum;
+import com.smartdata.core.utils.ResultVoUtil;
+import com.smartdata.core.vo.ResultVo;
+import com.smartdata.core.wraps.URL;
+import com.smartdata.venus.auth.aop.ActionLog;
+import com.smartdata.venus.auth.shiro.ShiroUtil;
+import com.smartdata.venus.core.log.action.UserAction;
+import com.smartdata.venus.exception.ResultException;
+import com.smartdata.venus.uc.core.config.properties.ProjectProperties;
+import com.smartdata.venus.uc.core.utils.CaptchaUtil;
+import com.smartdata.venus.uc.domain.User;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -21,18 +27,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.smartdata.core.enums.uc.ResultEnum;
-import com.smartdata.core.enums.uc.UserIsRoleEnum;
-import com.smartdata.core.utils.ResultVoUtil;
-import com.smartdata.core.vo.ResultVo;
-import com.smartdata.core.wraps.URL;
-import com.smartdata.venus.auth.aop.ActionLog;
-import com.smartdata.venus.auth.shiro.ShiroUtil;
-import com.smartdata.venus.core.log.action.UserAction;
-import com.smartdata.venus.exception.ResultException;
-import com.smartdata.venus.uc.core.config.properties.ProjectProperties;
-import com.smartdata.venus.uc.core.utils.CaptchaUtil;
-import com.smartdata.venus.uc.domain.User;
+import javax.imageio.ImageIO;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 /**
  * @author khlu

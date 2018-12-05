@@ -1,11 +1,10 @@
 package com.smartdata.venus.web.config;
 
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-
-import javax.servlet.Filter;
-
+import com.smartdata.venus.auth.shiro.AuthRealm;
+import com.smartdata.venus.auth.shiro.UserAuthFilter;
+import com.smartdata.venus.uc.core.config.properties.ProjectProperties;
+import net.sf.ehcache.CacheManager;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.codec.Base64;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
@@ -17,11 +16,9 @@ import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.smartdata.venus.auth.shiro.AuthRealm;
-import com.smartdata.venus.auth.shiro.UserAuthFilter;
-import com.smartdata.venus.uc.core.config.properties.ProjectProperties;
-
-import net.sf.ehcache.CacheManager;
+import javax.servlet.Filter;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  * @author khlu

@@ -1,9 +1,9 @@
 package com.smartdata.venus.uc.system.service.impl;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
-
+import com.smartdata.core.enums.uc.StatusEnum;
+import com.smartdata.venus.uc.domain.Role;
+import com.smartdata.venus.uc.system.repository.RoleRepository;
+import com.smartdata.venus.uc.system.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
@@ -12,10 +12,9 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.smartdata.core.enums.uc.StatusEnum;
-import com.smartdata.venus.uc.domain.Role;
-import com.smartdata.venus.uc.system.repository.RoleRepository;
-import com.smartdata.venus.uc.system.service.RoleService;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
 
 /**
  * @author khlu

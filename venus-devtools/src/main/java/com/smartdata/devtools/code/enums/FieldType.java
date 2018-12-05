@@ -1,8 +1,8 @@
 package com.smartdata.devtools.code.enums;
 
-import java.util.Date;
-
 import lombok.Getter;
+
+import java.util.Date;
 
 /**
  * @author khlu

@@ -1,8 +1,8 @@
 package com.smartdata.venus.uc.system.repository;
 
-import java.util.List;
-
 import com.smartdata.venus.uc.domain.User;
+
+import java.util.List;
 
 /**
  * @author khlu

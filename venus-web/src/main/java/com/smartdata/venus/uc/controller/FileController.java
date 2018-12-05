@@ -1,15 +1,5 @@
 package com.smartdata.venus.uc.controller;
 
-import java.io.IOException;
-import java.security.NoSuchAlgorithmException;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartFile;
-
 import com.smartdata.core.enums.uc.ResultEnum;
 import com.smartdata.core.utils.ResultVoUtil;
 import com.smartdata.core.vo.ResultVo;
@@ -17,6 +7,15 @@ import com.smartdata.venus.exception.ResultException;
 import com.smartdata.venus.uc.core.utils.FileUpload;
 import com.smartdata.venus.uc.domain.File;
 import com.smartdata.venus.uc.system.service.FileService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * @author khlu

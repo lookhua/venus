@@ -1,12 +1,11 @@
 package com.smartdata.venus.uc.core.thymeleaf.utility;
 
+import org.springframework.data.domain.Page;
+
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
-
-import org.springframework.data.domain.Page;
 
 /**
  * 分类显示辅助工具对象

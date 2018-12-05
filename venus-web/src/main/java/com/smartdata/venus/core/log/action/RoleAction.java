@@ -1,13 +1,13 @@
 package com.smartdata.venus.core.log.action;
 
-import javax.persistence.Table;
-
 import com.smartdata.venus.core.log.action.base.ActionMap;
 import com.smartdata.venus.core.log.action.base.ResetLog;
 import com.smartdata.venus.uc.core.log.action.model.BusinessMethod;
 import com.smartdata.venus.uc.core.utils.SpringContextUtil;
 import com.smartdata.venus.uc.domain.Role;
 import com.smartdata.venus.uc.system.service.RoleService;
+
+import javax.persistence.Table;
 
 /**
  * 角色日志行为

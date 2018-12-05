@@ -1,7 +1,9 @@
 package com.smartdata.venus.auth.shiro;
 
-import java.util.Set;
-
+import com.smartdata.core.utils.ToolUtil;
+import com.smartdata.venus.uc.core.utils.SpringContextUtil;
+import com.smartdata.venus.uc.domain.Role;
+import com.smartdata.venus.uc.domain.User;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -9,10 +11,7 @@ import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.mgt.RememberMeManager;
 import org.apache.shiro.util.ByteSource;
 
-import com.smartdata.core.utils.ToolUtil;
-import com.smartdata.venus.uc.core.utils.SpringContextUtil;
-import com.smartdata.venus.uc.domain.Role;
-import com.smartdata.venus.uc.domain.User;
+import java.util.Set;
 
 /**
  * Shiro工具类

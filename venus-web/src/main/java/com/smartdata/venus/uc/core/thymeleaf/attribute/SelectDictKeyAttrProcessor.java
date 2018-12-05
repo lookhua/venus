@@ -1,14 +1,13 @@
 package com.smartdata.venus.uc.core.thymeleaf.attribute;
 
-import java.util.Map;
-
+import com.smartdata.venus.uc.core.thymeleaf.utility.DictUtil;
 import org.thymeleaf.context.ITemplateContext;
 import org.thymeleaf.engine.AttributeName;
 import org.thymeleaf.model.IProcessableElementTag;
 import org.thymeleaf.processor.element.IElementTagStructureHandler;
 import org.thymeleaf.templatemode.TemplateMode;
 
-import com.smartdata.venus.uc.core.thymeleaf.utility.DictUtil;
+import java.util.Map;
 
 /**
  * 根据字典键值对生成下拉列表

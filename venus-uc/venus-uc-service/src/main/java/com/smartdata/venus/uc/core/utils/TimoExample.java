@@ -1,18 +1,17 @@
 package com.smartdata.venus.uc.core.utils;
 
 
+import com.smartdata.core.enums.uc.ResultEnum;
+import com.smartdata.core.enums.uc.StatusEnum;
+import com.smartdata.venus.exception.ResultException;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
+
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.InvocationTargetException;
-
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
-
-import com.smartdata.core.enums.uc.ResultEnum;
-import com.smartdata.core.enums.uc.StatusEnum;
-import com.smartdata.venus.exception.ResultException;
 
 /**
  * 封装Example对象，拦截部分不允许的搜索规则

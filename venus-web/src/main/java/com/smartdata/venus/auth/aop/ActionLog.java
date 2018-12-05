@@ -1,12 +1,12 @@
 package com.smartdata.venus.auth.aop;
 
 
+import com.smartdata.venus.core.log.action.base.ActionMap;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-
-import com.smartdata.venus.core.log.action.base.ActionMap;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD})

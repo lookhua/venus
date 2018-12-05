@@ -1,17 +1,16 @@
 package com.smartdata.venus.uc.core.thymeleaf.utility;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.smartdata.core.enums.uc.DictTypeEnum;
 import com.smartdata.core.utils.ToolUtil;
 import com.smartdata.venus.uc.core.utils.EhCacheUtil;
 import com.smartdata.venus.uc.core.utils.SpringContextUtil;
 import com.smartdata.venus.uc.domain.Dict;
 import com.smartdata.venus.uc.system.service.DictService;
-
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.Element;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 字典提取工具对象

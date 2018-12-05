@@ -1,8 +1,8 @@
 package com.smartdata.devtools.code.domain;
 
-import java.util.List;
-
 import lombok.Data;
+
+import java.util.List;
 
 /**
  * @author khlu

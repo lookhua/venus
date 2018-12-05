@@ -1,9 +1,8 @@
 package com.smartdata.venus.web.config;
 
+import com.smartdata.venus.uc.core.thymeleaf.TimoDialect;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import com.smartdata.venus.uc.core.thymeleaf.TimoDialect;
 
 /**
  * @author khlu

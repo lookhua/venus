@@ -1,11 +1,10 @@
 package com.smartdata.venus.uc.system.repository;
 
-import java.util.List;
-import java.util.Set;
-
+import com.smartdata.venus.uc.domain.Role;
 import org.springframework.data.domain.Sort;
 
-import com.smartdata.venus.uc.domain.Role;
+import java.util.List;
+import java.util.Set;
 
 
 public interface RoleRepository extends BaseRepository<Role,Long> {

@@ -1,10 +1,6 @@
 package com.smartdata.venus.uc.core.thymeleaf.attribute;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
+import com.smartdata.venus.uc.core.thymeleaf.utility.DictUtil;
 import org.thymeleaf.IEngineConfiguration;
 import org.thymeleaf.context.ITemplateContext;
 import org.thymeleaf.engine.AttributeName;
@@ -12,15 +8,13 @@ import org.thymeleaf.model.IProcessableElementTag;
 import org.thymeleaf.postprocessor.IPostProcessor;
 import org.thymeleaf.processor.element.AbstractAttributeTagProcessor;
 import org.thymeleaf.processor.element.IElementTagStructureHandler;
-import org.thymeleaf.standard.expression.FragmentExpression;
-import org.thymeleaf.standard.expression.IStandardExpression;
-import org.thymeleaf.standard.expression.IStandardExpressionParser;
-import org.thymeleaf.standard.expression.NoOpToken;
-import org.thymeleaf.standard.expression.StandardExpressionExecutionContext;
-import org.thymeleaf.standard.expression.StandardExpressions;
+import org.thymeleaf.standard.expression.*;
 import org.thymeleaf.templatemode.TemplateMode;
 
-import com.smartdata.venus.uc.core.thymeleaf.utility.DictUtil;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * 根据字典枚举生成下拉列表

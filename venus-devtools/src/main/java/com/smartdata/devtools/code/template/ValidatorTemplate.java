@@ -1,12 +1,5 @@
 package com.smartdata.devtools.code.template;
 
-import java.io.Serializable;
-import java.nio.file.FileAlreadyExistsException;
-import java.util.Date;
-import java.util.List;
-
-import org.hibernate.validator.constraints.URL;
-
 import com.smartdata.core.utils.ToolUtil;
 import com.smartdata.devtools.code.domain.Generate;
 import com.smartdata.devtools.code.enums.FieldType;
@@ -14,8 +7,13 @@ import com.smartdata.devtools.code.enums.FieldVerify;
 import com.smartdata.devtools.code.utils.CodeUtil;
 import com.smartdata.devtools.code.utils.GenerateUtil;
 import com.smartdata.devtools.code.utils.TemplateUtil;
-
 import lombok.Data;
+import org.hibernate.validator.constraints.URL;
+
+import java.io.Serializable;
+import java.nio.file.FileAlreadyExistsException;
+import java.util.Date;
+import java.util.List;
 
 /**
  * @author khlu

@@ -1,11 +1,11 @@
 package com.smartdata.core.utils;
 
+import org.springframework.beans.BeanUtils;
+
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-
-import org.springframework.beans.BeanUtils;
 
 /**
  * 反射获取JavaBean对象信息

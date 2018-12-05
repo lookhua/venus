@@ -1,18 +1,5 @@
 package com.smartdata.venus.devtools.controller;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-
 import com.smartdata.core.enums.uc.MenuTypeEnum;
 import com.smartdata.core.utils.ResultVoUtil;
 import com.smartdata.core.utils.ToolUtil;
@@ -24,15 +11,7 @@ import com.smartdata.devtools.code.domain.Template;
 import com.smartdata.devtools.code.enums.FieldQuery;
 import com.smartdata.devtools.code.enums.FieldType;
 import com.smartdata.devtools.code.enums.FieldVerify;
-import com.smartdata.devtools.code.template.AddHtmlTemplate;
-import com.smartdata.devtools.code.template.ControllerTemplate;
-import com.smartdata.devtools.code.template.DetailHtmlTemplate;
-import com.smartdata.devtools.code.template.EntityTemplate;
-import com.smartdata.devtools.code.template.IndexHtmlTemplate;
-import com.smartdata.devtools.code.template.RepositoryTemplate;
-import com.smartdata.devtools.code.template.ServiceImplTemplate;
-import com.smartdata.devtools.code.template.ServiceTemplate;
-import com.smartdata.devtools.code.template.ValidatorTemplate;
+import com.smartdata.devtools.code.template.*;
 import com.smartdata.venus.uc.controller.MenuController;
 import com.smartdata.venus.uc.controller.RoleController;
 import com.smartdata.venus.uc.core.constant.AdminConst;
@@ -42,6 +21,14 @@ import com.smartdata.venus.uc.domain.Role;
 import com.smartdata.venus.uc.system.service.MenuService;
 import com.smartdata.venus.uc.system.service.RoleService;
 import com.smartdata.venus.uc.validator.MenuForm;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author khlu
