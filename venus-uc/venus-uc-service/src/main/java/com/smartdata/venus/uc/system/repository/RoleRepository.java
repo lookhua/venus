@@ -1,5 +1,6 @@
 package com.smartdata.venus.uc.system.repository;
 
+import com.smartdata.core.jpa.BaseRepository;
 import com.smartdata.venus.uc.domain.Role;
 import org.springframework.data.domain.Sort;
 

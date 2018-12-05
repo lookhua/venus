@@ -1,5 +1,6 @@
 package com.smartdata.venus.uc.system.repository;
 
+import com.smartdata.core.jpa.BaseRepository;
 import com.smartdata.venus.uc.domain.User;
 
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.List;
  * @author khlu
  * @date 2018/8/14
  */
-public interface UserRepository extends BaseRepository<User, Long>{
+public interface UserRepository extends BaseRepository<User, Long> {
     /**
      * 根据用户名查询用户数据
      *
