@@ -1,0 +1,4 @@
+##[Class:3-4]
+
+public class #{obj}RepositoryImpl extends NativeSqlExecutorImpl implements #{obj}RepositoryCustom {
+}
