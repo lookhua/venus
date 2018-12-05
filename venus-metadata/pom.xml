@@ -4,6 +4,7 @@
     <groupId>com.smartdata</groupId>
     <artifactId>venus</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <relativePath/>
   </parent>
   <artifactId>venus-metadata</artifactId>
   <name>venus-metadata</name>
