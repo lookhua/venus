@@ -15,9 +15,9 @@ spring:
 ## 数据库配置
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.16.154.26:4306/smartdata?useSSL=false&characterEncoding=utf-8&allowPublicKeyRetrieval=true
-    username: adminuser
-    password: xylx1.t!@#
+    url: jdbc:mysql://127.0.0.1:3306/timo?useSSL=false&characterEncoding=utf-8&allowPublicKeyRetrieval=true
+    username: root
+    password: root
 
 
 ## jpa配置
