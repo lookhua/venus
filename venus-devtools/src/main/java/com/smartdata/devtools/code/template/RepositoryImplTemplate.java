@@ -20,6 +20,7 @@ public class RepositoryImplTemplate {
     private static void genImport(Generate generate) {
         String tableEntity = generate.getBasic().getTableEntity();
         CodeUtil.importLine(TemplateUtil.getPath(generate) + ".domain." + tableEntity);
+        CodeUtil.importLine(TemplateUtil.getPath(generate) + ".repository." + tableEntity + "Impl");
         CodeUtil.importLine("com.smartdata.core.jpa.NativeSqlExecutorImpl");
         CodeUtil.importLine(BaseRepository.class);
     }
@@ -49,7 +50,7 @@ public class RepositoryImplTemplate {
         RepositoryImplTemplate.genClazzBody(generate);
 
         // 生成文件
-        String filePath = GenerateUtil.getJavaFilePath(generate, "repository.impl", "Repository");
+        String filePath = GenerateUtil.getJavaFilePath(generate, "repository.impl", "RepositoryImpl");
         try {
             GenerateUtil.generateFile(filePath, CodeUtil.save());
         } catch (FileAlreadyExistsException e) {

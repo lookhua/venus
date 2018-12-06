@@ -46,7 +46,7 @@ public class RepositoryCustomTemplate {
         RepositoryCustomTemplate.genClazzBody(generate);
 
         // 生成文件
-        String filePath = GenerateUtil.getJavaFilePath(generate, "repository", "Repository");
+        String filePath = GenerateUtil.getJavaFilePath(generate, "repository", "RepositoryCustom");
         try {
             GenerateUtil.generateFile(filePath, CodeUtil.save());
         } catch (FileAlreadyExistsException e) {
