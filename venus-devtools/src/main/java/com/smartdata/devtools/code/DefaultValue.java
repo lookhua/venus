@@ -27,8 +27,8 @@ public class DefaultValue {
      */
     public static Basic getBasic(){
         Basic basic = new Basic();
-        basic.setProjectPath(ToolUtil.getProjectPath() + "/admin/");
-        basic.setPackagePath("com.linln.admin");
+        basic.setProjectPath(ToolUtil.getProjectPath() + "/gencode/");
+        basic.setPackagePath("com.smartdata.admin");
         basic.setAuthor("khlu");
         basic.setGenModule("order");
         basic.setTablePrefix("or_");
@@ -47,6 +47,8 @@ public class DefaultValue {
         fields.add(new Field("updateDate", "更新时间", FieldType.Date.getCode(), 0, true,null));
         fields.add(new Field("createBy", "创建者", FieldType.Object.getCode(), 0, false,null));
         fields.add(new Field("updateBy", "更新者", FieldType.Object.getCode(), 0, false,null));
+        fields.add(new Field("versionKey", "记录版本", FieldType.Long.getCode(), 0, true,null));
+        fields.add(new Field("partionKey", "分区健", FieldType.Long.getCode(), 0, true,null));
         fields.add(new Field("status", "数据状态", FieldType.Byte.getCode(), 0, true,null));
         return fields;
     }
