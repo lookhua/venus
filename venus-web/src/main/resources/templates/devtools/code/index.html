@@ -32,13 +32,19 @@
                         </div>
                     </div>
                     <div class="layui-inline">
-                        <label class="layui-form-label">作者名称</label>
+                        <label class="layui-form-label">模块名称</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="author" th:value="${basic.author}" autocomplete="off" class="layui-input">
+                            <input type="text" name="genModule" th:value="${basic.genModule}" autocomplete="off" class="layui-input">
                         </div>
                     </div>
                 </div>
                 <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">父级菜单</label>
+                        <div class="layui-input-inline">
+                            <input class="layui-input select-tree" th:attr="data-url=@{/menu/list}" type="text" name="genPMenu" value="顶级菜单" data-value="0" placeholder="请选择父级菜单">
+                        </div>
+                    </div>
                     <div class="layui-inline">
                         <label class="layui-form-label">业务名称</label>
                         <div class="layui-input-inline">
@@ -46,15 +52,9 @@
                         </div>
                     </div>
                     <div class="layui-inline">
-                        <label class="layui-form-label">模块名称</label>
+                        <label class="layui-form-label">作者名称</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="genModule" th:value="${basic.genModule}" autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-                    <div class="layui-inline">
-                        <label class="layui-form-label">父级菜单</label>
-                        <div class="layui-input-inline">
-                            <input class="layui-input select-tree" th:attr="data-url=@{/menu/list}" type="text" name="genPMenu" value="顶级菜单" data-value="0" placeholder="请选择父级菜单">
+                            <input type="text" name="author" th:value="${basic.author}" autocomplete="off" class="layui-input">
                         </div>
                     </div>
                 </div>
