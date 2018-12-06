@@ -28,9 +28,10 @@ public class DefaultValue {
     public static Basic getBasic(){
         Basic basic = new Basic();
         basic.setProjectPath(ToolUtil.getProjectPath() + "/gencode/");
-        basic.setPackagePath("com.smartdata.admin");
+        basic.setPackagePath("com.smartdata.venus");
         basic.setAuthor("khlu");
         basic.setGenModule("order");
+        basic.setGenTitle("订单");
         basic.setTablePrefix("or_");
         return basic;
     }
