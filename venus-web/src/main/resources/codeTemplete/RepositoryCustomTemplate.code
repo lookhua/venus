@@ -1,4 +1,5 @@
 ##[Class:3-4]
 
 public interface #{obj}RepositoryCustom {
+
 }
