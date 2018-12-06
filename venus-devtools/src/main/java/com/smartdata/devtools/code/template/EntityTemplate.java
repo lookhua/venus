@@ -95,6 +95,14 @@ public class EntityTemplate {
                 CodeUtil.tabLineNo(1, "// " + field.getTitle());
                 CodeUtil.tabLineNo(1, "private Byte status = " + CodeUtil.clazz(StatusEnum.class) + ".OK.getCode();");
                 break;
+            case "versions":
+                CodeUtil.tabLineNo(1, "// " + field.getTitle());
+                CodeUtil.tabLineNo(1, "private Long versions;");
+                break;
+            case "partions":
+                CodeUtil.tabLineNo(1, "// " + field.getTitle());
+                CodeUtil.tabLineNo(1, "private Long partions;");
+                break;
             default:
                 if(type.equals(FieldType.Text.getMessage())){
                     CodeUtil.tabLineNo(1, CodeUtil.anno(Lob.class) + " " + CodeUtil.anno(Column.class) + "(columnDefinition=\"TEXT\")");

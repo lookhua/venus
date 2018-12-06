@@ -61,6 +61,7 @@ public class GenerateController {
         if(generate.getTemplate().isRepository()){
             fieldMap.put("数据访问层", RepositoryTemplate.generate(generate));
             fieldMap.put("数据访问层", RepositoryCustomTemplate.generate(generate));
+            fieldMap.put("数据访问层", RepositoryImplTemplate.generate(generate));
         }
         if(generate.getTemplate().isService()){
             fieldMap.put("服务层", ServiceTemplate.generate(generate));

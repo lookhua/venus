@@ -19,7 +19,6 @@ public class RepositoryCustomTemplate {
     private static void genImport(Generate generate) {
         String tableEntity = generate.getBasic().getTableEntity();
         CodeUtil.importLine(TemplateUtil.getPath(generate) + ".domain." + tableEntity);
-        //CodeUtil.importLine(BaseRepository.class);
     }
 
     /**
