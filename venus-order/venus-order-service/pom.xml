@@ -8,4 +8,18 @@
   <artifactId>venus-order-service</artifactId>
   <name>venus-order-service</name>
   <description>venus-order-service</description>
+  
+  	<dependencies>
+		<dependency>
+			<groupId>com.smartdata</groupId>
+			<artifactId>venus-order-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.smartdata</groupId>
+			<artifactId>venus-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+	
 </project>

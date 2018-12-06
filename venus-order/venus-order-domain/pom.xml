@@ -14,5 +14,11 @@
 			<artifactId>venus-core</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.smartdata</groupId>
+			<artifactId>venus-uc-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
 	</dependencies>
 </project>
