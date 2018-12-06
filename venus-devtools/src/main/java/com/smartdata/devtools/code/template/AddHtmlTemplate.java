@@ -5,6 +5,9 @@ import com.smartdata.devtools.code.domain.Generate;
 import com.smartdata.devtools.code.utils.GenerateUtil;
 import com.smartdata.devtools.code.utils.TemplateUtil;
 
+import java.io.InputStream;
+import java.net.JarURLConnection;
+import java.net.URL;
 import java.nio.file.FileAlreadyExistsException;
 import java.util.Arrays;
 import java.util.List;
@@ -21,8 +24,7 @@ public class AddHtmlTemplate {
     private static String genHtmlBody(Generate generate) {
         // 构建数据
         String var = ToolUtil.lowerFirst(generate.getBasic().getTableEntity());
-        String filePath = AddHtmlTemplate.class.getResource("").getPath()
-                + AddHtmlTemplate.class.getSimpleName() + ".code";
+        String filePath =  AddHtmlTemplate.class.getSimpleName() + ".code";
 
         // 提取html页面
         String htmlTarget = TemplateUtil.getTemplate(filePath, "html");
@@ -69,5 +71,20 @@ public class AddHtmlTemplate {
             return GenerateUtil.fileExist(filePath);
         }
         return filePath;
+    }
+    
+    public InputStream getJarInputStream(String filePath, String name)
+            throws Exception {
+        URL url = new URL("jar:file:" + filePath + "!/" + name);
+        JarURLConnection jarConnection = (JarURLConnection) url
+                .openConnection();
+        InputStream in = jarConnection.getInputStream();
+
+        return in;
+    }
+    
+    public static void main(String[] args) {
+		String path="file:/home/lkh/.m2/repository/com/smartdata/venus-devtools/0.0.1-SNAPSHOT/venus-devtools-0.0.1-SNAPSHOT.jar!/com/smartdata/devtools/code/template/RepositoryTemplate.code";
+		TemplateUtil.getTemplate(path, "remark");
     }
 }

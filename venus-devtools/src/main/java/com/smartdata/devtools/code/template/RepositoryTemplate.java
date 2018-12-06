@@ -29,8 +29,7 @@ public class RepositoryTemplate {
     private static void genClazzBody(Generate generate) {
         // 构建数据
         String obj = generate.getBasic().getTableEntity();
-        String filePath = RepositoryTemplate.class.getResource("").getPath()
-                + RepositoryTemplate.class.getSimpleName() + ".code";
+        String filePath =  RepositoryTemplate.class.getSimpleName() + ".code";
 
         // 生成Class部分
         String clazzTarget = TemplateUtil.getTemplate(filePath, "Class");

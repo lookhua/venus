@@ -3,8 +3,8 @@ package com.smartdata.devtools.code.utils;
 import com.smartdata.devtools.code.domain.Generate;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -47,13 +47,13 @@ public class TemplateUtil {
      * @param path 文件路径
      * @param target 类或方法
      */
-    public static String getTemplate(String path, String target){
-        FileInputStream fis = null;
+    public static String getTemplate(String codeTemplateFileName, String target){
+    	InputStream in = null;
         InputStreamReader isr = null;
         BufferedReader br = null;
         try {
-            fis = new FileInputStream(path);
-            isr = new InputStreamReader(fis, "UTF-8");
+        	in = ClassLoader.getSystemResourceAsStream("codeTemplete/"+codeTemplateFileName);
+            isr = new InputStreamReader(in);
             br = new BufferedReader(isr);
             String firstLine = br.readLine();
             int indexOf = firstLine.indexOf(target);
@@ -73,7 +73,7 @@ public class TemplateUtil {
             }
         } catch (IOException e) {
             try {
-                if(fis != null) fis.close();
+                if(in != null) in.close();
                 if(isr != null) isr.close();
                 if(br != null) br.close();
             } catch (IOException e1) {

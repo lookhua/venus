@@ -50,8 +50,7 @@ public class ServiceImplTemplate {
         String var = ToolUtil.lowerFirst(generate.getBasic().getTableEntity());
         String obj = generate.getBasic().getTableEntity();
         String title = generate.getBasic().getGenTitle();
-        String filePath = ServiceImplTemplate.class.getResource("").getPath()
-                + ServiceImplTemplate.class.getSimpleName() + ".code";
+        String filePath =  ServiceImplTemplate.class.getSimpleName() + ".code";
 
         // 生成Class部分
         String clazzTarget = TemplateUtil.getTemplate(filePath, "Class");

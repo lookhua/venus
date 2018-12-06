@@ -29,8 +29,7 @@ public class DetailHtmlTemplate {
     private static String genHtmlBody(Generate generate) {
         // 构建数据
         String var = ToolUtil.lowerFirst(generate.getBasic().getTableEntity());
-        String filePath = DetailHtmlTemplate.class.getResource("").getPath()
-                + DetailHtmlTemplate.class.getSimpleName() + ".code";
+        String filePath =  DetailHtmlTemplate.class.getSimpleName() + ".code";
 
         // 提取html页面
         String htmlTarget = TemplateUtil.getTemplate(filePath, "html");

@@ -67,8 +67,7 @@ public class ControllerTemplate {
         String obj = generate.getBasic().getTableEntity();
         String title = generate.getBasic().getGenTitle();
         String module = generate.getBasic().getGenModule();
-        String filePath = ControllerTemplate.class.getResource("").getPath()
-                + ControllerTemplate.class.getSimpleName() + ".code";
+        String filePath =  ControllerTemplate.class.getSimpleName() + ".code";
 
         // 生成Class前部分
         String clazzTarget = TemplateUtil.getTemplate(filePath, "Class");

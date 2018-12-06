@@ -21,8 +21,7 @@ public class IndexHtmlTemplate {
         String var = ToolUtil.lowerFirst(generate.getBasic().getTableEntity());
         String obj = generate.getBasic().getTableEntity();
         String title = generate.getBasic().getGenTitle();
-        String filePath = IndexHtmlTemplate.class.getResource("").getPath()
-                + IndexHtmlTemplate.class.getSimpleName() + ".code";
+        String filePath =  IndexHtmlTemplate.class.getSimpleName() + ".code";
 
         // 提取html页面
         String htmlTarget = TemplateUtil.getTemplate(filePath, "html");

@@ -39,8 +39,7 @@ public class ServiceTemplate {
         // 构建数据
         String var = ToolUtil.lowerFirst(generate.getBasic().getTableEntity());
         String obj = generate.getBasic().getTableEntity();
-        String filePath = ServiceTemplate.class.getResource("").getPath()
-                + ServiceTemplate.class.getSimpleName() + ".code";
+        String filePath = ServiceTemplate.class.getSimpleName() + ".code";
 
         // 生成Class部分
         String clazzTarget = TemplateUtil.getTemplate(filePath, "Class");
