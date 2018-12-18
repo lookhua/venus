@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/common/template :: header(~{::title},~{::link},~{::style})">
+</head>
+<body>
+    <div class="timo-detail-page">
+        <div class="timo-detail-title">基本信息</div>
+        <table class="layui-table timo-detail-table">
+            <colgroup>
+                <col width="100px"><col>
+                <col width="100px"><col>
+            </colgroup>
+            <tbody>
+            <tr>
+                <th>主键ID</th>
+                <td th:text="${orderSurvey.id}"></td>
+                <th>预约编号</th>
+                <td th:text="${orderSurvey.fkSubscribeId}"></td>
+            </tr>
+            <tr>
+                <th>订单名称</th>
+                <td th:text="${orderSurvey.name}"></td>
+                <th>订单预付金额</th>
+                <td th:text="${orderSurvey.repayMoney}"></td>
+            </tr>
+            <tr>
+                <th>订单后付金额</th>
+                <td th:text="${orderSurvey.payMoney}"></td>
+                <th>订单客户方编号</th>
+                <td th:text="${orderSurvey.fkConsumerId}"></td>
+            </tr>
+            <tr>
+                <th>订单客户方手机</th>
+                <td th:text="${orderSurvey.consumerPhone}"></td>
+                <th>订单客户方地址</th>
+                <td th:text="${orderSurvey.consumerAddr}"></td>
+            </tr>
+            <tr>
+                <th>订单服务人员</th>
+                <td th:text="${orderSurvey.fkServicerId}"></td>
+                <th>订单服务人员手机</th>
+                <td th:text="${orderSurvey.servicePhone}"></td>
+            </tr>
+            <tr>
+                <th>订单确认人员</th>
+                <td th:text="${orderSurvey.fkConfirmerId}"></td>
+                <th>标题</th>
+                <td th:text="${orderSurvey.title}"></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <th>创建时间</th>
+                <td th:text="${#dates.format(orderSurvey.createDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+                <th>更新时间</th>
+                <td th:text="${#dates.format(orderSurvey.updateDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <th>创建者</th>
+                <td th:text="${orderSurvey.createBy?.nickname}"></td>
+                <th>更新者</th>
+                <td th:text="${orderSurvey.updateBy?.nickname}"></td>
+            </tr>
+            <tr>
+                <th>记录版本</th>
+                <td th:text="${orderSurvey.versionKey}"></td>
+                <th>分区健</th>
+                <td th:text="${orderSurvey.partionKey}"></td>
+            </tr>
+            <tr>
+                <th>备注</th>
+                <td th:text="${orderSurvey.remark}" colspan="4"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+<script th:replace="/common/template :: script"></script>
+</body>
+</html>
