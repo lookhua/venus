@@ -18,7 +18,6 @@ spring:
     url: jdbc:mysql://47.105.198.211:3306/lhjj?useSSL=false&characterEncoding=utf-8&allowPublicKeyRetrieval=true&serverTimezone=UTC
     username: root
     password: Lhjj123456!
-    颠三倒四
 
 
 ## jpa配置
